@@ -1,7 +1,12 @@
 import React from "react";
+import Sidebar from "./components/Sidebar";
 
 function App() {
-  return <div className="text-green-700">alo</div>;
+  return (
+    <div className="flex">
+      <Sidebar />
+    </div>
+  );
 }
 
 export default App;
