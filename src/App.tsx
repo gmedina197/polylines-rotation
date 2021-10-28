@@ -1,11 +1,8 @@
 import Canvas from "./components/Canvas";
 import Sidebar from "./components/Sidebar";
-import { useSelector } from "./hooks/redux";
 
 function App() {
 
-  const state = useSelector(state => state.shape)
-  console.log(state)
   return (
     <div className="flex">
       <Sidebar />
