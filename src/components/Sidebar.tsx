@@ -7,13 +7,14 @@ type SidebarProps = {
   onClick?: () => void;
 };
 
-function Sidebar() {
+function Sidebar(): JSX.Element {
   return (
     <div
-      className="fixed top-0 left-0 h-screen w-16 m-0
-                     flex flex-col bg-gray-700 text-white shadow-sm"
+      className="h-screen w-16 m-0
+                flex flex-col bg-gray-700 
+                text-white shadow-sm"
     >
-      <SideBarIcon icon={<FaFire size="28" />} />
+      <SideBarIcon icon={<FaFire size="28" />} text="Salvar"/>
       <SideBarIcon icon={<FaFire size="28" />} />
       <SideBarIcon icon={<FaFire size="28" />} />
       <SideBarIcon icon={<FaPoo size="28" />} />
