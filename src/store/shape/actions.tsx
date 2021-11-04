@@ -1,8 +1,16 @@
-import { CREATE_SHAPE, GET_SHAPE, LIST_SHAPE, UPDATE_SHAPE, DELETE_SHAPE } from "./types";
+import { Vertex } from "../../structures/vertex";
+import {
+  CREATE_SHAPE,
+  GET_SHAPE,
+  LIST_SHAPE,
+  UPDATE_SHAPE,
+  DELETE_SHAPE,
+} from "./types";
 
-export const createShape = () => {
+export const createShape = (point: Vertex) => {
   return {
     type: CREATE_SHAPE,
+    payload: point,
   };
 };
 
